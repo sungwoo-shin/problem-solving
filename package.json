@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@fxts/core": "^0.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0"
   }
 }
