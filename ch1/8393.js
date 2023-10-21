@@ -13,10 +13,3 @@ for (let i = 1; i <= input; i += 1) {
 log(summary);
 
 // log((input * (input + 1)) / 2);
-
-// fp
-const range = (n) => Array.from({ length: n }, (_, i) => i + 1);
-const add = (a, b) => a + b;
-
-const clacSummary = (n) => range(n).reduce(add);
-log(clacSummary(input));
