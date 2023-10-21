@@ -15,5 +15,5 @@ if (a === b && b === c) {
 } else if (b === c) {
   log(1000 + b * 100);
 } else {
-  log(Math.max(a, b, c));
+  log(Math.max(a, b, c) * 100);
 }

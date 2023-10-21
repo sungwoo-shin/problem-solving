@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     "no-console": "off",
     yoda: "off",
+    "no-unused-vars": "warn",
   },
   overrides: [
     {
