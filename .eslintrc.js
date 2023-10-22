@@ -9,6 +9,7 @@ module.exports = {
     "no-console": "off",
     yoda: "off",
     "no-unused-vars": "warn",
+    "no-param-reassign": "off",
   },
   overrides: [
     {
