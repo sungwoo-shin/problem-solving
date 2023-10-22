@@ -10,6 +10,7 @@ module.exports = {
     yoda: "off",
     "no-unused-vars": "warn",
     "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
   },
   overrides: [
     {

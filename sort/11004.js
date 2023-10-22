@@ -5,7 +5,7 @@ const input = fs.readFileSync(path).toString().trim().split("\n");
 
 const { log } = console;
 
-const [n, k] = input[0].split(" ").map(Number); // N(1 ≤ N ≤ 5,000,000) // O(N log N)
+const [, k] = input[0].split(" ").map(Number); // N(1 ≤ N ≤ 5,000,000) // O(N log N)
 const numberList = input[1].split(" ").map(Number);
 
 (function solution() {

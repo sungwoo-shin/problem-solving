@@ -5,7 +5,7 @@ const input = fs.readFileSync(path).toString().trim().split("\n");
 
 const { log } = console;
 
-const n = Number(input[0]); // 1 <= N <= 1000 // O(N^2)
+// const n = Number(input[0]); // 1 <= N <= 1000 // O(N^2)
 input.shift();
 const numberList = input.map(Number);
 

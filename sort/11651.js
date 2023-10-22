@@ -5,7 +5,7 @@ const input = fs.readFileSync(path).toString().trim().split("\n");
 
 const { log } = console;
 
-// const n = Number(input[0]); // N (1 ≤ N ≤ 100,000) // O(N log N)
+// const n = Number(input[0]); // N (1 ≤ N ≤ 100,000) // log(N log N)
 input.shift();
 
 (function solution() {
@@ -13,10 +13,10 @@ input.shift();
     const [x1, y1] = a.split(" ").map(Number);
     const [x2, y2] = b.split(" ").map(Number);
 
-    if (x1 !== x2) {
-      return x1 - x2;
+    if (y1 !== y2) {
+      return y1 - y2;
     }
-    return y1 - y2;
+    return x1 - x2;
   };
 
   input.sort(compare);
