@@ -14,6 +14,7 @@ class Queue {
     const headItem = this.items[this.headIdx];
     delete this.items[this.headIdx];
     this.headIdx += 1;
+
     return headItem;
   }
 

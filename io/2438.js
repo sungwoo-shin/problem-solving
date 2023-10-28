@@ -11,7 +11,9 @@ for (let i = 0; i < n; i += 1) {
     result += "*";
   }
 
-  if (i === n - 1) break;
+  if (i === n - 1) {
+    break;
+  }
   result += "\n";
 }
 

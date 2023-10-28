@@ -12,6 +12,7 @@ input.shift();
   const compare = (a, b) => {
     const ageA = Number(a.split(" ")[0]);
     const ageB = Number(b.split(" ")[0]);
+
     return ageA - ageB;
   };
 

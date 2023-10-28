@@ -34,7 +34,9 @@ PriorityQueue.DEFAULT_COMPARATOR = function (a, b) {
   a = a.toString();
   b = b.toString();
 
-  if (a === b) return 0;
+  if (a === b) {
+    return 0;
+  }
 
   return a > b ? 1 : -1;
 };
@@ -57,7 +59,9 @@ PriorityQueue.prototype.isEmpty = function () {
  * @api public
  */
 PriorityQueue.prototype.peek = function () {
-  if (this.isEmpty()) throw new Error("PriorityQueue is empty");
+  if (this.isEmpty()) {
+    throw new Error("PriorityQueue is empty");
+  }
 
   return this._elements[0];
 };
@@ -74,7 +78,9 @@ PriorityQueue.prototype.deq = function () {
   const last = this._elements.pop();
   const size = this.size();
 
-  if (size === 0) return first;
+  if (size === 0) {
+    return first;
+  }
 
   this._elements[0] = last;
   let current = 0;
@@ -92,7 +98,9 @@ PriorityQueue.prototype.deq = function () {
       largest = right;
     }
 
-    if (largest === current) break;
+    if (largest === current) {
+      break;
+    }
 
     this._swap(largest, current);
     current = largest;
@@ -115,7 +123,9 @@ PriorityQueue.prototype.enq = function (element) {
   while (current > 0) {
     const parent = Math.floor((current - 1) / 2);
 
-    if (this._compare(current, parent) <= 0) break;
+    if (this._compare(current, parent) <= 0) {
+      break;
+    }
 
     this._swap(parent, current);
     current = parent;

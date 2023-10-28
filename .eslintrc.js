@@ -6,9 +6,16 @@ module.exports = {
   },
   extends: ["eslint:recommended", "airbnb-base", "plugin:prettier/recommended"],
   rules: {
-    "no-console": "off",
-    yoda: "off",
+    curly: ["error", "all"],
+    "padding-line-between-statements": [
+      "error",
+      { blankLine: "always", prev: "*", next: "return" },
+    ],
+    "no-array-constructor": "error",
+    //
     "no-unused-vars": "warn",
+    //
+    "no-console": "off",
     "no-param-reassign": "off",
     "no-restricted-syntax": "off",
   },

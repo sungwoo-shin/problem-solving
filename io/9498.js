@@ -6,13 +6,13 @@ const path = process.platform === "linux" ? "/dev/stdin" : "input.txt";
 const input = +fs.readFileSync(path).toString();
 
 let ret = "F";
-if (90 <= input && input <= 100) {
+if (input >= 90 && input <= 100) {
   ret = "A";
-} else if (80 <= input && input <= 89) {
+} else if (input >= 80 && input <= 89) {
   ret = "B";
-} else if (70 <= input && input <= 79) {
+} else if (input >= 70 && input <= 79) {
   ret = "C";
-} else if (60 <= input && input <= 69) {
+} else if (input >= 60 && input <= 69) {
   ret = "D";
 }
 

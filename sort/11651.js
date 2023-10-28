@@ -16,6 +16,7 @@ input.shift();
     if (y1 !== y2) {
       return y1 - y2;
     }
+
     return x1 - x2;
   };
 
