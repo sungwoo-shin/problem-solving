@@ -18,6 +18,7 @@ module.exports = {
     "no-console": "off",
     "no-param-reassign": "off",
     "no-restricted-syntax": "off",
+    "no-continue": "off",
   },
   overrides: [
     {
