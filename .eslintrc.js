@@ -13,12 +13,9 @@ module.exports = {
     ],
     "no-array-constructor": "error",
     //
-    "no-unused-vars": "warn",
-    //
     "no-console": "off",
-    "no-param-reassign": "off",
-    "no-restricted-syntax": "off",
     "no-continue": "off",
+    "no-param-reassign": "off",
   },
   overrides: [
     {
