@@ -1,4 +1,4 @@
-const { default: withArrayCopy } = require("./withArrayCopy");
+import withArrayCopy from "./withArrayCopy";
 
 const push = (array, elem) => {
   return withArrayCopy(array, (copy) => {
