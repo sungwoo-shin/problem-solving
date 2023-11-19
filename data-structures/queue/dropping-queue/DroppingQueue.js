@@ -1,4 +1,4 @@
-import noop from "../../../grokking-simplicity copy/helper/noop";
+import noop from "../../../utils/helper/noop";
 
 /**
  * @example
