@@ -1,4 +1,8 @@
+import { go } from "../helper/go.js";
 import { curry } from "../helper/curry.js";
+import { pipe } from "../helper/pipe.js";
+import { take } from "./take.js";
+import { takeAll } from "./takeAll.js";
 
 export const L = {};
 
@@ -26,8 +30,17 @@ L.filter = curry(function* (f, iter) {
 
 L.entries = function* (obj) {
   for (const k in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, k)) {
+    // eslint-disable-next-line no-prototype-builtins
+    if (obj.hasOwnProperty(k)) {
       yield [k, obj[k]];
     }
   }
 };
+
+export const map = curry(pipe(L.map, takeAll));
+
+export const filter = curry(pipe(L.filter, takeAll));
+
+export const head = pipe(take(1), ([h]) => h);
+
+export const find = curry((f, iter) => go(iter, L.filter(f), head));
