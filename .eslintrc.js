@@ -17,6 +17,8 @@ module.exports = {
     "no-continue": "off",
     "no-param-reassign": "off",
     "import/prefer-default-export": "off",
+    "no-restricted-syntax": "off",
+    "func-names": "off",
   },
   overrides: [
     {
