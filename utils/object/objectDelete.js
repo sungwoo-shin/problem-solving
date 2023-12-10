@@ -1,4 +1,4 @@
-import { withObjectCopy } from "./withObjectCopy";
+import { withObjectCopy } from "./withObjectCopy.js";
 
 export const objectDelete = (object, key) =>
   withObjectCopy(object, (copy) => {

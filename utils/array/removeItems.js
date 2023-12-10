@@ -1,4 +1,4 @@
-import { withArrayCopy } from "./withArrayCopy";
+import { withArrayCopy } from "./withArrayCopy.js";
 
 export const removeItems = (array, idx, count) =>
   withArrayCopy(array, (copy) => {

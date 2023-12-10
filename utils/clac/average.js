@@ -1,3 +1,3 @@
-import { plus } from "./plus";
+import { add } from "./add.js";
 
-export const average = (numbers) => numbers.reduce(plus, 0) / numbers.length;
+export const average = (numbers) => numbers.reduce(add, 0) / numbers.length;

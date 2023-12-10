@@ -1,4 +1,4 @@
-import { curry } from "../helper/curry";
+import { curry } from "../helper/curry.js";
 
 export const reduce = curry((f, acc, iter) => {
   if (!iter) {

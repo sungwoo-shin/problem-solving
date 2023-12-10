@@ -19,6 +19,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "no-restricted-syntax": "off",
     "func-names": "off",
+    "import/extensions": "off",
   },
   overrides: [
     {

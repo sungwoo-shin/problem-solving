@@ -1,4 +1,4 @@
-import { withArrayCopy } from "./withArrayCopy";
+import { withArrayCopy } from "./withArrayCopy.js";
 
 export const addElementLast = (array, elem) =>
   withArrayCopy(array, (copy) => {

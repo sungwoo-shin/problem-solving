@@ -1,4 +1,4 @@
-import { withArrayCopy } from "./withArrayCopy";
+import { withArrayCopy } from "./withArrayCopy.js";
 
 export const arraySet = (array, idx, value) =>
   withArrayCopy(array, (copy) => {

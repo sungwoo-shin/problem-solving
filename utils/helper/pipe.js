@@ -1,4 +1,4 @@
-import { go } from "./go";
+import { go } from "./go.js";
 
 export const pipe =
   (f, ...fs) =>

@@ -1,5 +1,5 @@
-import { dropFirst } from "../array/dropFirst";
-import { update } from "./update";
+import { dropFirst } from "../array/dropFirst.js";
+import { update } from "./update.js";
 
 export const nestedUpdate = (object, keys, modify) => {
   if (keys.length === 0) {

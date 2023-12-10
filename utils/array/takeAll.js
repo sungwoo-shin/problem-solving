@@ -1,3 +1,3 @@
-import { take } from "./take";
+import { take } from "./take.js";
 
 export const takeAll = take(Infinity);
