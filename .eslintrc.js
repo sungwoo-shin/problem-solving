@@ -16,6 +16,7 @@ module.exports = {
     "no-console": "off",
     "no-continue": "off",
     "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
   },
   overrides: [
     {

@@ -1,8 +1,6 @@
-import withArrayCopy from "./withArrayCopy";
+import { withArrayCopy } from "./withArrayCopy";
 
-const addElementLast = (array, elem) =>
+export const addElementLast = (array, elem) =>
   withArrayCopy(array, (copy) => {
     copy.push(elem);
   });
-
-export default addElementLast;

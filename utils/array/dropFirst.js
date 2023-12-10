@@ -1,8 +1,6 @@
-import withArrayCopy from "./withArrayCopy";
+import { withArrayCopy } from "./withArrayCopy";
 
-const dropFirst = (array) =>
+export const dropFirst = (array) =>
   withArrayCopy(array, (copy) => {
     copy.shift();
   });
-
-export default dropFirst;

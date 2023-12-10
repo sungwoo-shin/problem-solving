@@ -1,8 +1,6 @@
-import withArrayCopy from "./withArrayCopy";
+import { withArrayCopy } from "./withArrayCopy";
 
-const push = (array, elem) =>
+export const push = (array, elem) =>
   withArrayCopy(array, (copy) => {
     copy.push(elem);
   });
-
-export default push;

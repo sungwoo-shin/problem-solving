@@ -1,8 +1,6 @@
-import withObjectCopy from "./withObjectCopy";
+import { withObjectCopy } from "./withObjectCopy";
 
-const objectDelete = (object, key) =>
+export const objectDelete = (object, key) =>
   withObjectCopy(object, (copy) => {
     delete copy[key];
   });
-
-export default objectDelete;

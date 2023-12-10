@@ -1,7 +1,7 @@
-import dropFirst from "../array/dropFirst";
-import update from "./update";
+import { dropFirst } from "../array/dropFirst";
+import { update } from "./update";
 
-const nestedUpdate = (object, keys, modify) => {
+export const nestedUpdate = (object, keys, modify) => {
   if (keys.length === 0) {
     return modify(object);
   }
@@ -13,5 +13,3 @@ const nestedUpdate = (object, keys, modify) => {
     nestedUpdate(value1, restOfKeys, modify),
   );
 };
-
-export default nestedUpdate;
