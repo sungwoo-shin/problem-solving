@@ -1,7 +1,5 @@
-import { go } from "../helper/go.js";
 import { curry } from "../helper/curry.js";
 import { pipe } from "../helper/pipe.js";
-import { take } from "./take.js";
 import { takeAll } from "./takeAll.js";
 
 export const L = {};
@@ -32,6 +30,6 @@ export const map = curry(pipe(L.map, takeAll));
 
 export const filter = curry(pipe(L.filter, takeAll));
 
-export const head = pipe(take(1), ([h]) => h);
+// export const head = pipe(take(1), ([h]) => h);
 
-export const find = curry((f, iter) => go(iter, L.filter(f), head));
+// export const find = curry((f, iter) => go(iter, L.filter(f), head));

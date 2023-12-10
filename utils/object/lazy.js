@@ -1,3 +1,5 @@
+import { reduce } from "../array/reduce.js";
+
 export const L = {};
 
 L.entries = function* (obj) {
@@ -23,3 +25,14 @@ L.values = function* (obj) {
     }
   }
 };
+
+export const object = (entries) =>
+  reduce(
+    (obj, [k, v]) => {
+      obj[k] = v;
+
+      return obj;
+    },
+    {},
+    entries,
+  );
