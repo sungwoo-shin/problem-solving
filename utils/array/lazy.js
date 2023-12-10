@@ -28,14 +28,6 @@ L.filter = curry(function* (f, iter) {
   }
 });
 
-L.entries = function* (obj) {
-  for (const k in obj) {
-    if (obj.hasOwnProperty(k)) {
-      yield [k, obj[k]];
-    }
-  }
-};
-
 export const map = curry(pipe(L.map, takeAll));
 
 export const filter = curry(pipe(L.filter, takeAll));
