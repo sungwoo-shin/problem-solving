@@ -20,6 +20,7 @@ module.exports = {
     "no-restricted-syntax": "off",
     "func-names": "off",
     "import/extensions": "off",
+    "no-prototype-builtins": "off",
   },
   overrides: [
     {

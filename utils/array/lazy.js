@@ -30,7 +30,6 @@ L.filter = curry(function* (f, iter) {
 
 L.entries = function* (obj) {
   for (const k in obj) {
-    // eslint-disable-next-line no-prototype-builtins
     if (obj.hasOwnProperty(k)) {
       yield [k, obj[k]];
     }
