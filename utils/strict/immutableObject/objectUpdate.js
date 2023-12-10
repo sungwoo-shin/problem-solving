@@ -1,4 +1,4 @@
-import { objectSet } from "./objectSet.js";
+import { objectSet } from "./objectSet";
 
 export const update = (object, key, modify) => {
   const value = object[key];

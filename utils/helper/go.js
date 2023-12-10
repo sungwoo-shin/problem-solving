@@ -1,3 +1,3 @@
-import { reduce } from "../array/reduce.js";
+import { reduce } from "../strict/reduce.js";
 
 export const go = (...args) => reduce((a, f) => f(a), args);

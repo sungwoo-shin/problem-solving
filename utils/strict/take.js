@@ -16,3 +16,5 @@ export const take = curry((l, iter) => {
 
   return res;
 });
+
+export const takeAll = take(Infinity);
